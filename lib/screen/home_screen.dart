@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
     final recipe = sampleRecipes[index];
     return Card(
       child: ListTile(
-        leading: Image.asset(recipe.imagePath, width: 20, fit: BoxFit.cover),
+        leading: Image.asset(recipe.imagePath, width: 80, height: 80, fit: BoxFit.contain),
         title:   Text(recipe.name),
         trailing: const Icon(Icons.chevron_right),
         onTap: () {
