@@ -14,11 +14,26 @@ class DetailsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Hero image
-            Image.asset(recipe.imagePath, height: 220, width: double.infinity, fit: BoxFit.cover),
+            Image.asset(recipe.imagePath, height: 280, width: double.infinity, fit: BoxFit.contain),
             // Name, Ingredients, Instructions…
-          ],
-        ),
-      ),
+            const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+            "Instructions",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                 ),
+               ), const SizedBox(height: 8),
+
+            Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+            recipe.instructions,
+            style: const TextStyle(fontSize: 16),
+                 ),
+             ),
+           ],
+           ),
+          ),
     );
   }
 }
