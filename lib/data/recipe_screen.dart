@@ -25,7 +25,7 @@ final List<Recipe> sampleRecipes = [
 
   Recipe(
     name: 'Chia Seed Pudding',
-    imagePath: 'assets/images/rice.png',
+    imagePath: 'assets/images/chia.png',
     ingredients: [
       'Chia Seeds',
       'Milk',
@@ -43,7 +43,7 @@ final List<Recipe> sampleRecipes = [
 
   Recipe(
     name: 'Scrambled Eggs',
-    imagePath: 'assets/images/rice.png',
+    imagePath: 'assets/images/egg.png',
     ingredients: [
       '2 Eggs',
       'Salt',
@@ -61,7 +61,7 @@ final List<Recipe> sampleRecipes = [
 
   Recipe(
     name: 'Fruit Smoothie',
-    imagePath: 'assets/images/rice.png',
+    imagePath: 'assets/images/s.png',
     ingredients: [
       '1 Banana',
       '1 Cup Frozen Berries',
